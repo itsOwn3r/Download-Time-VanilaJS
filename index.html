@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Time</title>
+    <meta name="description" content="Check how long does it take to download a file...">
+    <link rel="icon" href="https://own3r.me/icon.ico">
+    <link href="static/css/style.css" rel="stylesheet">
+</head>
+<body style="background: linear-gradient(0deg, rgb(28, 151, 177) 0%, rgb(9, 9, 52) 54%, rgb(0, 0, 12) 100%);">
+    <div class="full-width">
+        <div class="container">
+            <h1 class="header"><a href="https://own3r.me" target="_blank"> Download&apos;s Time App</a></h1>
+            <p>How to Use it?</p>
+            <p>Just fill the inputs and hit the Button! Lets Go!</p>
+            <p>Please Use *Byte Per Second!</p>
+        </div>
+        <div id="result"></div>
+        <div class="container minHeight">
+            <form id="form">
+                <div class="row">
+                    <div class="center">
+                    <label for="speed">Your Download Speed:</label><br>
+                        <input type="number" name="speed" id="speed" placeholder="Your Speed...">
+                    <select id="speedSelect">
+                        <option value="KB">KB/s</option>
+                        <option value="MB" selected>MB/s</option>
+                        <option value="GB">GB/s</option>
+                      </select>
+                      <div class="remember">
+                        <button type="button" class="remember-btn" id="remember">Remember?</button>
+                      </div>
+                    </div>
+                    <br>
+
+                <br>
+                <div class="center">
+                    <label for="size">Size of the file:</label><br>
+                <input type="text" name="size" id="size" placeholder="Size of the file or Direct Link...">
+                    <select id="sizeSelect">
+                        <option value="KB">KB</option>
+                        <option value="MB" selected>MB</option>
+                        <option value="GB">GB</option>
+                      </select>
+                      <button id="check" type="button" disabled>Check!</button>
+
+                <br>
+                
+            </div><input type="submit" class="lets-go" value="Lets Go!">
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
